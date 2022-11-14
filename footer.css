@@ -1,0 +1,22 @@
+    .dropper {
+    height: 100vh;
+    position: fixed;
+    width: 50%;
+    top: -100%;
+    /* background-color: rgb(28, 185, 185); */
+    background-color: #dfe9ed;
+    z-index: 999;
+    right: -49%;
+    justify-content: center;
+    text-align: center;
+}
+.back_tint
+{
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    right: -100%;
+    z-index: 998 !important;
+}
+

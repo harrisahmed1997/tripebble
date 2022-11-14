@@ -1,0 +1,127 @@
+@font-face {
+    font-family: "Myriad";
+    src: url(Fonts/MYRIADPRO-REGULAR.OTF);
+}
+.section
+{
+    background-color: #023436;
+    border: 1px solid transparent;
+}
+#sec1
+{
+    position: fixed; /* Make it stick/fixed */
+    top: 0; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.4s; /* Transition effect when sliding down (and up) */
+    z-index: 1000;
+    opacity: 0.0;
+    animation: fadeIn ease 2s forwards;
+}
+@keyframes fadeIn 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
+.bigwrapper{
+    width: 100%;
+     top: 0;
+    left: 0;
+    z-index: 10000;
+    background-color: #023436;
+}
+
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+#listz
+{
+    display: inline;
+    padding: 15px;
+    text-decoration: none;
+     
+    font-family: 'Myriad';
+    font-size:30px
+}
+
+.nav {
+    /* border: 2px solid black; */
+    position: relative;
+    padding: 10px 0px;
+}
+
+.nav-items {
+    list-style-type: none;
+}
+
+.nav-links {
+    text-decoration: none;
+    font-family: "Myriad";
+    color: #FFFFFF;
+    font-size: 30pt;
+}
+
+.nav ul {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+
+   .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav ul {
+        margin-left: auto;
+        display: block;
+    }
+
+    .nav-items {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right:40px;
+    }
+
+
+/*         @media(min-width:768px) {
+    .nav {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav ul {
+        margin-left: auto;
+        display: block;
+    }
+
+    .nav-items {
+        display: inline-block;
+        padding-left: 20px;
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+}
+*/
+
+
+#logo
+{
+    font-family: "Tactic";
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family:'Tactic'; 
+    font-size: 45px; 
+    padding-top: 5%; 
+    font-weight:500;
+    transition: 0.2s;
+}

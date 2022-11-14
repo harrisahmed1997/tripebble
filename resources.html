@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TriPebble</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="resources.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+
+
+</head>
+
+
+
+<body>
+    <!-- <div class="cursor"></div> -->
+    <!--Navigation bar-->
+
+    <div class="section" id="sec1">
+        <div class="containerz" id="navbar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" id="logo" href="index.html">tripebble.</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav  ms-auto" style="padding-top: 7%;">
+                            <li class="nav-item" id="listz">
+                                <a class="nav-link" href="work.html" style="color:#ffffff ;">Work</a>
+                            </li>
+                            <li class="nav-item" id="listz">
+                                <a class="nav-link" href="services.html" style="color:#ffffff ;">Services </a>
+                            </li>
+                            <li class="nav-item" id="listz">
+                                <a class="nav-link" href="about.html" style="color:#ffffff ;">About Us </a>
+                            </li>
+                            <li class="nav-item" id="listz">
+                                <a class="nav-link" href="resources.html" style="color:#ffffff ;">Resources</a>
+                            </li>
+                            <li>
+                                <a class="nav-link" href="" style="text-decoration: none; color: #FFFFFF; font-family: 'Myriad';font-size:30px"><button id="probut">Start a Project</button></a>    
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="back_tint"></div>
+        <div class="section">
+        <div class="containerz content mt-5">
+            <div class="firstheading">
+                <h1 class="mainheading">
+                    Resources
+                </h1>
+                <p class="sub_main" style="width: 55%; margin-left: 0;">it's here: the subway foot-long sub, now for rs 399/- only. Offer available for a limited time only
+                </p>
+            </div>
+            </div>
+            </div>
+            <div id="footer-placeholder">
+                <script>
+                    $(function(){
+                      $("#footer-placeholder").load("footer.html");
+                    });
+                    </script>
+            </div>
+
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() 
+    {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos>currentScrollPos && document.documentElement.scrollTop <=150)
+        {
+        document.getElementById("sec1").style.top = "0px";
+        document.getElementById("logo").style.fontSize = "45px";
+        }
+        else if(prevScrollpos>currentScrollPos)
+        {
+        document.getElementById("sec1").style.top = "-90px";
+        document.getElementById("logo").style.fontSize = "30px";
+        } 
+        else
+        {
+        document.getElementById("sec1").style.top = "-250px";
+        }
+    prevScrollpos = currentScrollPos;
+    }
+    </script>
+
+</html>
