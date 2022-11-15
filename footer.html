@@ -98,9 +98,11 @@
                 style="max-width:500px; width:100%; text-align: center; border:none;  border-bottom:2px solid#023436; background-color: transparent;"
                 type="text" id="fname" placeholder="TYPE YOUR NAME">
             <p style="margin-top: 20px ;">2. Your Email</p>
-            <input
-                style="max-width:500px; width:100%; text-align: center; border:none;  border-bottom:2px solid#023436; background-color: transparent;"
+            <textarea
+                style="max-width:500px; width:100%; text-align: center; border:2px solid black;  border-bottom:2px solid#023436; background-color: transparent; "
                 type="text" id="fname" placeholder="TYPE YOUR EMAIL">
+
+            </textarea>
             <p style="margin-top: 20px ;">2. Project Details <br></p>
             <input
                 style="max-width:500px; width:100%; text-align: center; border:none;  border-bottom:2px solid#023436; background-color: transparent;"
@@ -109,52 +111,59 @@
             <input
                 style="max-width:500px; width:100%; text-align: center; border:none;  border-bottom:2px solid#023436; background-color: transparent;"
                 type="text" id="fname" placeholder="IN $">
-                <div>
-                    <button id="probut"
+            <div>
+                <button id="probut"
                     style="text-decoration:none; color: white; background-color: #023436; padding: 1px 20px; border-radius: 25px; margin-top: 25px; ">Send</button>
-                </div>
-      
+            </div>
+
         </form>
-    </d iv>
-</div>
+        </d iv>
+    </div>
 
 
-<script>
-    toggled = false;
-
-
-
-
-    document.querySelector('.button-74').addEventListener('click', function () {
-        dropper1 = document.querySelector(".dropper");
-        if (!toggled) {
-
-
-            // gsap.to(".bar_drop", { x: 0, top: '0', duration: 0.2, ease: "power3.out" });
-            gsap.to(".back_tint", { right: '0%', duration: .3, ease: "expo.out" });
-            gsap.to(".dropper", { x: 0, top: '0%', duration: 0.2, ease: "power3.out" });
-            gsap.to(".dropper", { right: '25%', duration: 0.3, ease: "expo.out", delay: .2 });
-            toggled = true;
-
-        }
-
-        else {
-
-            gsap.to(".dropper", { x: 0, right: '-49.2%', delay: 0.5, duration: 0.2, ease: "power3.out", delay: 0.3 });
-            gsap.to(".dropper", { x: 0, top: '-100%', duration: 0.2, ease: "expo.out", delay: 1 });
-            // gsap.to(".bar_drop", { x: 0, top: '-100%', duration: 0.2, ease: "power3.out" });
-            toggled = false;
-
-        }
-    })
-</script>
-<script>
-    $("div.back_tint").click(function () {
-        gsap.to(".back_tint", { right: '-100%', duration: .5, ease: "expo.out", delay: 0 });
-        gsap.to(".dropper", { x: 0, right: '-50%', delay: 0.5, duration: 0.2, ease: "power3.out", delay: 0.15 });
-        gsap.to(".dropper", { x: 0, top: '-100%', duration: 0.2, ease: "expo.out", delay: 1 });
-        // gsap.to(".bar_drop", { x: 0, top: '-100%', duration: 0.2, ease: "power3.out", delay: 0.6});
+    <script>
         toggled = false;
-    });
 
-</script>
+
+
+
+        document.querySelector('.button-74').addEventListener('click', function () {
+            dropper1 = document.querySelector(".dropper");
+            if (!toggled) {
+
+
+                // gsap.to(".bar_drop", { x: 0, top: '0', duration: 0.2, ease: "power3.out" });
+                gsap.to(".back_tint", { right: '0%', duration: .3, ease: "expo.out" });
+                gsap.to(".dropper", { x: 0, top: '0%', duration: 0.2, ease: "power3.out" });
+                gsap.to(".dropper", { right: '25%', duration: 0.3, ease: "expo.out", delay: .2 });
+                toggled = true;
+
+            }
+
+            else {
+
+                gsap.to(".dropper", { x: 0, right: '-49.2%', delay: 0.5, duration: 0.2, ease: "power3.out", delay: 0.3 });
+                gsap.to(".dropper", { x: 0, top: '-100%', duration: 0.2, ease: "expo.out", delay: 1 });
+                // gsap.to(".bar_drop", { x: 0, top: '-100%', duration: 0.2, ease: "power3.out" });
+                toggled = false;
+
+            }
+        })
+    </script>
+    <script>
+        $("div.back_tint").click(function () {
+            gsap.to(".back_tint", { right: '-100%', duration: .5, ease: "expo.out", delay: 0 });
+            gsap.to(".dropper", { x: 0, right: '-50%', delay: 0.5, duration: 0.2, ease: "power3.out", delay: 0.15 });
+            gsap.to(".dropper", { x: 0, top: '-100%', duration: 0.2, ease: "expo.out", delay: 1 });
+            // gsap.to(".bar_drop", { x: 0, top: '-100%', duration: 0.2, ease: "power3.out", delay: 0.6});
+            toggled = false;
+        });
+
+    </script>
+
+
+
+    <script>
+        
+    
+    </script>

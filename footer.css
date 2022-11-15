@@ -1,22 +1,53 @@
     .dropper {
-    height: 100vh;
-    position: fixed;
-    width: 50%;
-    top: -100%;
-    /* background-color: rgb(28, 185, 185); */
-    background-color: #dfe9ed;
-    z-index: 999;
-    right: -49%;
-    justify-content: center;
-    text-align: center;
-}
-.back_tint
-{
-    height: 100vh;
-    position: fixed;
-    width: 100%;
-    background: rgba(0,0,0,.8);
-    right: -100%;
-    z-index: 998 !important;
-}
+        height: 100vh;
+        position: fixed;
+        width: 50%;
+        top: -100%;
+        /* background-color: rgb(28, 185, 185); */
+        background-color: #dfe9ed;
+        z-index: 999;
+        right: -49%;
+        justify-content: center;
+        text-align: center;
+        overflow: scroll;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 5px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #023436;
+        border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #023436;
+    }
+
+    .back_tint {
+        height: 100vh;
+        position: fixed;
+        width: 100%;
+        background: rgba(0, 0, 0, .8);
+        right: -100%;
+        z-index: 998 !important;
+    }
+
+    @media(max-width:900px) {
+        .dropper {
+            width: 100%;
+            right: 0% !important;
+        }
+    }
