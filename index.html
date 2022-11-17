@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="footer.css">
-    
+
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -17,13 +17,25 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
 
 
+    <style>
+        .whatsappcontainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 50%;
+            border: none;
+            outline: none;
+            box-shadow: 0px 0px 2px #023436;
+        }
+
+        .fa-whatsapp {
+            color: green;
+        }
+    </style>
 
 </head>
 
@@ -32,12 +44,17 @@
 <body>
     <!-- <div class="cursor"></div> -->
     <!--Navigation bar-->
+    <a href="https://wa.me/923200232133/?text=Hi there, I want to work with you!" target="_blank">
 
-    <div class="section" id="sec1">
+        <span class="whatsappcontainer" style="position: fixed; right:40px; bottom:40px; cursor: pointer;">
+            <i style="font-size: 32px;" class="fa-brands fa-whatsapp"></i>
+        </span>
+    </a>
+    <div class="section " id="sec1">
         <div class="containerz" id="navbar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand" id="logo" href="index.html" >tripebble.</a>
+                    <a class="navbar-brand" id="logo" href="index.html">tripebble.</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +75,9 @@
                                 <a class="nav-link" href="resources.html" style="color:#ffffff ;">Resources</a>
                             </li>
                             <li>
-                                <a class="nav-link" href="" style="text-decoration: none; color: #FFFFFF; font-family: 'Myriad';font-size:30px"><button id="probut">Start a Project</button></a>    
+                                <a class="nav-link" href=""
+                                    style="text-decoration: none; color: #FFFFFF; font-family: 'Myriad';font-size:30px"><button
+                                        id="probut">Start a Project</button></a>
                             </li>
                         </ul>
                     </div>
@@ -67,20 +86,21 @@
         </div>
     </div>
     <div class="back_tint"></div>
-        <div class="section">
+    <div class="section greensection">
         <div class="containerz content mt-5">
             <div class="firstheading">
                 <h1 class="mainheading">
                     We craft holistic, people-friendly digital experiences.
                 </h1>
-                
-                <p class="sub_main">TriPebble is a strategic digital partner for companies seeking design and development solutions that can help them become a brand that connects with people.
+
+                <p class="sub_main">TriPebble is a strategic digital partner for companies seeking design and
+                    development solutions that can help them become a brand that connects with people.
 
                 </p>
             </div>
             <div class="main_media">
 
-                <div class="video" >
+                <div class="video">
                     <video controls autoplay muted loop width=" 100%">
                         <source src="Video/Mail.mp4" type="video/mp4">
                     </video>
@@ -90,25 +110,29 @@
             <div class="content-wrapper position-relative">
                 <div class="detail_para">
                     <p>
-                        TriPebble is a creative studio specializing in personalized design and development. We aim to create authentic brand experiences for businesses that aim to connect with their audience.
+                        TriPebble is a creative studio specializing in personalized design and development. We aim to
+                        create authentic brand experiences for businesses that aim to connect with their audience.
                     </p>
                     <p>
-                        <br>Our studio combines design, development, and writing to provide every client with an individual customer experience. Our process involves extensive research on your business, and target audience prequel to solutions. To define you better, we must first know you the best.
+                        <br>Our studio combines design, development, and writing to provide every client with an
+                        individual customer experience. Our process involves extensive research on your business, and
+                        target audience prequel to solutions. To define you better, we must first know you the best.
                     </p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    </div>
 
 
-    <div class="containerzz" style="padding-bottom: 22%;">
+    <section class="containerzz whitesection" style="padding-bottom: 22%;">
         <div class="color_change" bg-color="#ffffff">
 
             <div class="grid-container">
                 <div class="grid-item one">
                     <h1 class="wwd"> The work we do,<br>and the people we help.</h1>
-                    <p class="wwd-mini">Our streamlined process takes care of discovery, branding, design, copy, and development.</p>
+                    <p class="wwd-mini">Our streamlined process takes care of discovery, branding, design, copy, and
+                        development.</p>
                 </div>
 
                 <div class="grid-item">
@@ -118,21 +142,23 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="hero_down">
+    </section>
+    <div class="hero_down greensection">
         <h1 class="hero-down-heading">
-            We translate research into<br> solutions, crafting thoughtful<br> and unified brand identities,<br> apps, websites,
+            We translate research into<br> solutions, crafting thoughtful<br> and unified brand identities,<br> apps,
+            websites,
             interfaces, and software.
         </h1>
-  
+
 
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"> </script>
     <div id="footer-placeholder">
         <script>
-            $(function(){
-              $("#footer-placeholder").load("footer.html");
+            $(function () {
+                $("#footer-placeholder").load("footer.html");
             });
-            </script>
+        </script>
     </div>
 
 
@@ -143,27 +169,25 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-    <script>
-        var prevScrollpos = window.pageYOffset;
-    window.onscroll = function() 
-    {
+<script>
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
         var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos>currentScrollPos && document.documentElement.scrollTop <=150)
-        {
-        document.getElementById("sec1").style.top = "0px";
-        document.getElementById("logo").style.fontSize = "45px";
+        if (prevScrollpos > currentScrollPos && document.documentElement.scrollTop <= 150) {
+            document.getElementById("sec1").style.top = "0px";
+            document.getElementById("logo").style.fontSize = "45px";
         }
-        else if(prevScrollpos>currentScrollPos)
-        {
-        document.getElementById("sec1").style.top = "-90px";
-        document.getElementById("logo").style.fontSize = "30px";
-        } 
-        else
-        {
-        document.getElementById("sec1").style.top = "-250px";
+        else if (prevScrollpos > currentScrollPos) {
+            document.getElementById("sec1").style.top = "-90px";
+            document.getElementById("logo").style.fontSize = "30px";
         }
-    prevScrollpos = currentScrollPos;
+        else {
+            document.getElementById("sec1").style.top = "-250px";
+        }
+        prevScrollpos = currentScrollPos;
     }
-    </script>
+</script>
+
+
 
 </html>
